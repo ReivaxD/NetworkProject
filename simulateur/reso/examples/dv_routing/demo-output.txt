@@ -1,0 +1,72 @@
+234ms E eth1 : src=192.168.2.3, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,3]]
+        old best (B,1,1)
+        (B,1,1)
+        (C,3,1)
+        new best (B,1,1)
+        best route unchanged.
+[A]
+        10.0.0.0 oif=lo0, type=STATIC
+                active:true, cost:0
+[B]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=1
+                active:true, cost:1
+                active:true, connected:true, to:B
+        10.0.0.1 oif=lo0, type=STATIC
+                active:true, cost:0
+[C]
+        192.168.0.2 oif=eth3, type=DV_ROUTING, cost=3
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.2 oif=lo0, type=STATIC
+                active:true, cost:0
+[D]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=7
+                active:true, cost:7
+                active:true, connected:true, to:D
+        10.0.0.3 oif=lo0, type=STATIC
+                active:true, cost:0
+[E]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=2
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.4 oif=lo0, type=STATIC
+                active:true, cost:0
+[F]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=13
+                active:true, cost:6
+                active:true, connected:true, to:F
+        10.0.0.5 oif=lo0, type=STATIC
+                active:true, cost:0
+[A]
+        10.0.0.0 oif=lo0, type=STATIC
+                active:true, cost:0
+[B]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=1
+                active:true, cost:1
+                active:true, connected:true, to:B
+        10.0.0.1 oif=lo0, type=STATIC
+                active:true, cost:0
+[C]
+        192.168.0.2 oif=eth3, type=DV_ROUTING, cost=3
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.2 oif=lo0, type=STATIC
+                active:true, cost:0
+[D]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=7
+                active:true, cost:7
+                active:true, connected:true, to:D
+        10.0.0.3 oif=lo0, type=STATIC
+                active:true, cost:0
+[E]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=2
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.4 oif=lo0, type=STATIC
+                active:true, cost:0
+[F]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=13
+                active:true, cost:6
+                active:true, connected:true, to:F
+        10.0.0.5 oif=lo0, type=STATIC
+                active:true, cost:0

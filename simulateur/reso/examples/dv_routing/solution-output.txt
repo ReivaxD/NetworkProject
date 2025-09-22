@@ -1,0 +1,366 @@
+------------------------------------------------------------
+58ms B eth0 : src=192.168.0.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,0]]
+        old best ---
+        (A,0,1)
+        new best (A,0,1)
+        best route changed -> update !
+------------------------------------------------------------
+58ms C eth0 : src=192.168.0.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,0]]
+        old best ---
+        (A,0,14)
+        new best (A,0,14)
+        best route changed -> update !
+------------------------------------------------------------
+58ms D eth0 : src=192.168.0.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,0]]
+        old best ---
+        (A,0,7)
+        new best (A,0,7)
+        best route changed -> update !
+------------------------------------------------------------
+117ms A eth0 : src=192.168.1.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        route to myself; discard !
+------------------------------------------------------------
+117ms C eth1 : src=192.168.1.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,1]]
+        old best (A,0,14)
+        (A,0,14)
+        (B,1,10)
+        new best (B,1,10)
+        best route changed -> update !
+------------------------------------------------------------
+117ms E eth0 : src=192.168.1.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,1]]
+        old best ---
+        (B,1,1)
+        new best (B,1,1)
+        best route changed -> update !
+------------------------------------------------------------
+117ms A eth1 : src=192.168.2.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        route to myself; discard !
+------------------------------------------------------------
+117ms B eth1 : src=192.168.2.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (A,0,1)
+        (A,0,1)
+        (C,14,10)
+        new best (A,0,1)
+        best route unchanged.
+------------------------------------------------------------
+117ms D eth1 : src=192.168.2.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (A,0,7)
+        (A,0,7)
+        (C,14,8)
+        new best (A,0,7)
+        best route unchanged.
+------------------------------------------------------------
+117ms E eth1 : src=192.168.2.3, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (B,1,1)
+        (B,1,1)
+        (C,14,1)
+        new best (B,1,1)
+        best route unchanged.
+------------------------------------------------------------
+117ms A eth2 : src=192.168.3.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        route to myself; discard !
+------------------------------------------------------------
+117ms C eth2 : src=192.168.3.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,7]]
+        old best (B,1,10)
+        (A,0,14)
+        (B,1,10)
+        (D,7,8)
+        new best (B,1,10)
+        best route unchanged.
+------------------------------------------------------------
+117ms F eth0 : src=192.168.3.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,7]]
+        old best ---
+        (D,7,6)
+        new best (D,7,6)
+        best route changed -> update !
+------------------------------------------------------------
+175ms A eth1 : src=192.168.2.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,11]]
+        route to myself; discard !
+------------------------------------------------------------
+175ms B eth1 : src=192.168.2.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (A,0,1)
+        (A,0,1)
+        (C,inf,10)
+        new best (A,0,1)
+        best route unchanged.
+------------------------------------------------------------
+175ms D eth1 : src=192.168.2.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,11]]
+        old best (A,0,7)
+        (A,0,7)
+        (C,11,8)
+        new best (A,0,7)
+        best route unchanged.
+------------------------------------------------------------
+175ms E eth1 : src=192.168.2.3, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,11]]
+        old best (B,1,1)
+        (B,1,1)
+        (C,11,1)
+        new best (B,1,1)
+        best route unchanged.
+------------------------------------------------------------
+175ms B eth2 : src=192.168.4.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (A,0,1)
+        (A,0,1)
+        (C,inf,10)
+        (E,inf,1)
+        new best (A,0,1)
+        best route unchanged.
+------------------------------------------------------------
+175ms C eth3 : src=192.168.4.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,2]]
+        old best (B,1,10)
+        (A,0,14)
+        (B,1,10)
+        (D,7,8)
+        (E,2,1)
+        new best (E,2,1)
+        best route changed -> update !
+------------------------------------------------------------
+175ms D eth2 : src=192.168.5.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (A,0,7)
+        (A,0,7)
+        (C,11,8)
+        (F,inf,6)
+        new best (A,0,7)
+        best route unchanged.
+------------------------------------------------------------
+234ms A eth1 : src=192.168.2.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,3]]
+        route to myself; discard !
+------------------------------------------------------------
+234ms B eth1 : src=192.168.2.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,3]]
+        old best (A,0,1)
+        (A,0,1)
+        (C,3,10)
+        (E,inf,1)
+        new best (A,0,1)
+        best route unchanged.
+------------------------------------------------------------
+234ms D eth1 : src=192.168.2.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,3]]
+        old best (A,0,7)
+        (A,0,7)
+        (C,3,8)
+        (F,inf,6)
+        new best (A,0,7)
+        best route unchanged.
+------------------------------------------------------------
+234ms E eth1 : src=192.168.2.3, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (B,1,1)
+        (B,1,1)
+        (C,inf,1)
+        new best (B,1,1)
+        best route unchanged.
+------------------------------------------------------------
+234ms B eth0 : attribute "metric" changed on interface "eth0" : 60
+        old best (A,0,1)
+        (A,0,60)
+        (C,3,10)
+        (E,inf,1)
+        new best (C,3,10)
+        best route changed -> update !
+------------------------------------------------------------
+234ms B eth1 : attribute "metric" changed on interface "eth1" : 60
+        old best (C,3,10)
+        (A,0,60)
+        (C,3,60)
+        (E,inf,1)
+        new best (A,0,60)
+        best route changed -> update !
+[A]
+        10.0.0.0 oif=lo0, type=STATIC
+                active:true, cost:0
+[B]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=60
+                active:true, cost:60
+                active:true, connected:true, to:B
+        10.0.0.1 oif=lo0, type=STATIC
+                active:true, cost:0
+[C]
+        192.168.0.2 oif=eth3, type=DV_ROUTING, cost=3
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.2 oif=lo0, type=STATIC
+                active:true, cost:0
+[D]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=7
+                active:true, cost:7
+                active:true, connected:true, to:D
+        10.0.0.3 oif=lo0, type=STATIC
+                active:true, cost:0
+[E]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=2
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.4 oif=lo0, type=STATIC
+                active:true, cost:0
+[F]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=13
+                active:true, cost:6
+                active:true, connected:true, to:F
+        10.0.0.5 oif=lo0, type=STATIC
+                active:true, cost:0
+------------------------------------------------------------
+293ms A eth0 : src=192.168.1.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,13]]
+        route to myself; discard !
+------------------------------------------------------------
+293ms C eth1 : src=192.168.1.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (E,2,1)
+        (A,0,14)
+        (B,inf,10)
+        (D,7,8)
+        (E,2,1)
+        new best (E,2,1)
+        best route unchanged.
+------------------------------------------------------------
+293ms E eth0 : src=192.168.1.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,13]]
+        old best (B,1,1)
+        (B,13,1)
+        (C,inf,1)
+        new best (B,13,1)
+        best route changed -> update !
+------------------------------------------------------------
+326ms A eth0 : src=192.168.1.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        route to myself; discard !
+------------------------------------------------------------
+326ms C eth1 : src=192.168.1.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,60]]
+        old best (E,2,1)
+        (A,0,14)
+        (B,60,10)
+        (D,7,8)
+        (E,2,1)
+        new best (E,2,1)
+        best route unchanged.
+------------------------------------------------------------
+326ms E eth0 : src=192.168.1.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,60]]
+        old best (B,13,1)
+        (B,60,1)
+        (C,inf,1)
+        new best (B,60,1)
+        best route changed -> update !
+------------------------------------------------------------
+351ms B eth2 : src=192.168.4.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (A,0,60)
+        (A,0,60)
+        (C,3,60)
+        (E,inf,1)
+        new best (A,0,60)
+        best route unchanged.
+------------------------------------------------------------
+351ms C eth3 : src=192.168.4.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (E,2,1)
+        (A,0,14)
+        (B,60,10)
+        (D,7,8)
+        (E,14,1)
+        new best (A,0,14)
+        best route changed -> update !
+------------------------------------------------------------
+385ms B eth2 : src=192.168.4.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (A,0,60)
+        (A,0,60)
+        (C,3,60)
+        (E,inf,1)
+        new best (A,0,60)
+        best route unchanged.
+------------------------------------------------------------
+385ms C eth3 : src=192.168.4.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,61]]
+        old best (A,0,14)
+        (A,0,14)
+        (B,60,10)
+        (D,7,8)
+        (E,61,1)
+        new best (A,0,14)
+        best route unchanged.
+------------------------------------------------------------
+410ms A eth1 : src=192.168.2.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        route to myself; discard !
+------------------------------------------------------------
+410ms B eth1 : src=192.168.2.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (A,0,60)
+        (A,0,60)
+        (C,14,60)
+        (E,inf,1)
+        new best (A,0,60)
+        best route unchanged.
+------------------------------------------------------------
+410ms D eth1 : src=192.168.2.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (A,0,7)
+        (A,0,7)
+        (C,14,8)
+        (F,inf,6)
+        new best (A,0,7)
+        best route unchanged.
+------------------------------------------------------------
+410ms E eth1 : src=192.168.2.3, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,14]]
+        old best (B,60,1)
+        (B,60,1)
+        (C,14,1)
+        new best (C,14,1)
+        best route changed -> update !
+------------------------------------------------------------
+468ms B eth2 : src=192.168.4.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,15]]
+        old best (A,0,60)
+        (A,0,60)
+        (C,14,60)
+        (E,15,1)
+        new best (E,15,1)
+        best route changed -> update !
+------------------------------------------------------------
+468ms C eth3 : src=192.168.4.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (A,0,14)
+        (A,0,14)
+        (B,60,10)
+        (D,7,8)
+        (E,inf,1)
+        new best (A,0,14)
+        best route unchanged.
+------------------------------------------------------------
+527ms A eth0 : src=192.168.1.0, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,16]]
+        route to myself; discard !
+------------------------------------------------------------
+527ms C eth1 : src=192.168.1.1, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,16]]
+        old best (A,0,14)
+        (A,0,14)
+        (B,16,10)
+        (D,7,8)
+        (E,inf,1)
+        new best (A,0,14)
+        best route unchanged.
+------------------------------------------------------------
+527ms E eth0 : src=192.168.1.2, dst=255.255.255.255,proto=1, payload=[ DV[192.168.0.2,inf]]
+        old best (C,14,1)
+        (B,inf,1)
+        (C,14,1)
+        new best (C,14,1)
+        best route unchanged.
+[A]
+        10.0.0.0 oif=lo0, type=STATIC
+                active:true, cost:0
+[B]
+        192.168.0.2 oif=eth2, type=DV_ROUTING, cost=16
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.1 oif=lo0, type=STATIC
+                active:true, cost:0
+[C]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=14
+                active:true, cost:14
+                active:true, connected:true, to:C
+        10.0.0.2 oif=lo0, type=STATIC
+                active:true, cost:0
+[D]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=7
+                active:true, cost:7
+                active:true, connected:true, to:D
+        10.0.0.3 oif=lo0, type=STATIC
+                active:true, cost:0
+[E]
+        192.168.0.2 oif=eth1, type=DV_ROUTING, cost=15
+                active:true, cost:1
+                active:true, connected:true, to:E
+        10.0.0.4 oif=lo0, type=STATIC
+                active:true, cost:0
+[F]
+        192.168.0.2 oif=eth0, type=DV_ROUTING, cost=13
+                active:true, cost:6
+                active:true, connected:true, to:F
+        10.0.0.5 oif=lo0, type=STATIC
+                active:true, cost:0
