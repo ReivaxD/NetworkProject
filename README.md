@@ -1,6 +1,7 @@
 # Projet-Reseau
 
 Pour lancer ce programme, lancer le fichier simulateur/reso/examples/dv_routing/Demo.java
+La racine du dossier est le dossier simulateur. Lancer le dossier depuis l'intérieure de ce dossier pour éviter des problèmes de chemins d'accès
 (ne pas oublier de compiler avant de lancer si modifications il y a eu)
 
 -> main de Demo.java est la méthode principale :
@@ -10,6 +11,4 @@ Pour lancer ce programme, lancer le fichier simulateur/reso/examples/dv_routing/
   
   -> scheduler.run() lance l'algo avec le router A comme récepteur du 1er signal (via setupRoutingProtocol(network, "A") )
   -> scheduler.runUntil(0.100) lance l'algo avec un timing max avant arret (en cas de récursion infinie)
-  
-Exercice 2 presque fini, tout est la en commentaire dans main, seulement, il reste à trouver le changement d'arc provoquant une boucle infinie
-Note : boucle infinie n'est pas vraiment infinie, c'est le concept vu en cours
+
